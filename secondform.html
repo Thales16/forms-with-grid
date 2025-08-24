@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        :root {
+            --bg: #f9f6f3;
+            --blue: #0c1d59;
+            --gray: #888;
+            --radius: 30px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--bg);
+            border-radius: 12px;
+            max-width: 1000px;
+            width: 95%;
+            padding: 40px;
+            gap: 40px;
+            align-items: start;
+        }
+
+
+        .contact-image img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+
+        .contact-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--blue);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 18px;
+            border: 1px solid #ccc;
+            border-radius: var(--radius);
+            font-size: 14px;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            min-height: 100px;
+        }
+
+        .btn {
+            background: var(--blue);
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 24px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: 0.3s;
+            align-self: start;
+        }
+
+        .btn:hover {
+            background: #142f80;
+        }
+
+        
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--blue);
+        }
+
+        .info p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .socials a {
+            color: var(--blue);
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contact-section">
+
+        
+        <div class="contact-image">
+            <img src="unsplash_TyanDMPxwHc.png" alt="Notebook with phone">
+        </div>
+
+        
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+
+            <form action="#">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit" class="btn">Contact Us</button>
+            </form>
+
+            <div class="info">
+                <strong>Contact</strong>
+                <p>hi@green.com</p>
+            </div>
+
+            <div class="info">
+                <strong>Based in</strong>
+                <p>New York, California, Ohio</p>
+            </div>
+
+            <div class="socials">
+                <a href="#">🌐</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
